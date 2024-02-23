@@ -4,18 +4,26 @@
     box-sizing: border-box;
 
 }
-body{
-    background-color: black;
+.component{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.66)),
+    url(images/weather.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width : 100%;
+    height : 100vh;
 }
 .card{
     width:90%;
     max-width: 470px;
-    background-image: linear-gradient(130deg, rgb(234, 202, 207), rgb(164, 227, 227), rgb(156, 213, 156));
+    background-image: linear-gradient(130deg, rgba(224, 197, 201, 0.737), rgba(164, 227, 227, 0.748), rgba(156, 213, 156, 0.742));
     color: black;
-    margin: 100px auto 0;
     border-radius: 20px;
-    padding:20px 35px;
+    padding:40px 35px;
     text-align: center;
+    position: relative;
+    margin: auto;
+    top: 100px;
 
 }
 .search{
@@ -23,12 +31,14 @@ body{
     flex-direction: row;
     gap: 5px;
     justify-content: center;
+    
 }
 .search input{
     width: 300px;
     padding: 15px;
     border: none;
     border-radius: 5px;
+    font-size: 20px;
 }
 .search button {
     border-radius: 5%;
@@ -37,6 +47,7 @@ body{
     background-color:black;
     color: white;
     font-size: 20px;
+    cursor: pointer;
    
 }
 .search button:hover {
@@ -72,10 +83,11 @@ body{
 }
 .humidity, .wind{
     display: flex;
-   
+   font-size: 20px;;
 }
 .percentage, .speed{
     color: rgb(36, 36, 36);
+    font-size: 20px;;
 }
 
 .humidity img, .wind img{
